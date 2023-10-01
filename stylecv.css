@@ -5,7 +5,6 @@
     padding: 0 ;
     box-sizing: border-box;
     font-family: "Poppins"; sans-serif;
-
 }
 
 body {
@@ -49,6 +48,9 @@ body {
 
 .home {
     height: 100vh;
+    /*background: url("portada.jpg") no-repeat;*/
+    background-size: cover;
+    background-position: left;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -61,6 +63,7 @@ body {
 .home-content h1 {
     font-size: 46px;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .home-content h3 {
@@ -71,6 +74,7 @@ body {
 
 .home-content p {
     font-size: 10px;
+    margin: 10px 0 30px;
 }
 
 .home-content .btn-box {
@@ -81,6 +85,7 @@ body {
 }
 
 .btn-box a {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -93,4 +98,50 @@ body {
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
+    z-index: 1;
+    overflow:  hidden;
+    transition: .5s;
 }
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+color: #081b29;
+
+}
+
+.btn-box a::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:rgb(0, 255, 55);
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before {
+    width: 100%;
+}
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background: transparent;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+}
+
