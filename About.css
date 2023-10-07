@@ -69,11 +69,12 @@ body {
 }
 
 .home-content {
+    position: right;
     max-width: 700px;
 }
 
 .home-content h1 {
-    position: relative;
+    position: right;
     font-size: 46px;
     font-weight: 700;
     line-height: 1.2;
@@ -125,4 +126,3 @@ body {
     font-size: 20px;
     color: #00abf0;
     text-decoration: none;
-
