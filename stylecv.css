@@ -53,7 +53,7 @@ body {
     transition: .3s;
 }
 
-.navbar a:hover,
+
 .navbar a.active {
     color: #00abf0;
 }
@@ -149,6 +149,10 @@ color: #081b29;
 }
 .btn-box a:hover::before {
     width: 100%;
+}
+
+.photo {
+    
 }
 .home-sci {
     position: absolute;
