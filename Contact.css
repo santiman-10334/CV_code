@@ -72,14 +72,14 @@ body {
     max-width: 700px;
 }
 
-.home-content h1 {
+.home-content a {
     position: relative;
     font-size: 46px;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.home-content h1::before {
+.home-content a::before {
     content:'';
     position: absolute;
     top: 0;

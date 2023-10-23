@@ -60,7 +60,6 @@ body {
 
 .home {
     height: 100vh;
-    /*background: url("portada.jpg") no-repeat;*/
     background-size: cover;
     background-position: left;
     display: flex;
@@ -100,6 +99,10 @@ body {
 .home-content p {
     font-size: 10px;
     margin: 10px 0 30px;
+}
+
+.NOC {
+    padding-top: 100px;
 }
 
 .home-content .btn-box {
